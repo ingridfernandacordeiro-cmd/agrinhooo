@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte: Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav id="menu">
+            <div class="logo">Agrinho<span>2026</span></div>
+            <div class="nav-links">
+                <a href="#hero">Início</a>
+                <button id="btn-tema">Modo Escuro</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?q=80&w=1200') center/cover;">
+            <div class="hero-content">
+                <h1 id="titulo-principal">Produção em Equilíbrio</h1>
+                <p>Tecnologia e preservação: o caminho para a agricultura do amanhã.</p>
+                <a href="#interativo" class="btn-acao">Explorar Impacto</a>
+            </div>
+        </section>
+
+        <section class="container secao-flex">
+            <div class="texto-container">
+                <h2>O Compromisso do Campo</h2>
+                <p>A agricultura moderna utiliza drones e sensores para otimizar recursos, garantindo que a produção cresça sem agredir os ecossistemas locais. É a ciência a favor da vida.</p>
+            </div>
+            <div class="imagem-container">
+                <img src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9?q=80&w=600" alt="Plantação tecnológica" class="img-custom">
+            </div>
+        </section>
+
+        <section id="interativo" class="container bg-verde">
+            <h2>Calculadora de Impacto Positivo</h2>
+            <p>Descubra o quanto de oxigênio as árvores que você plantou ou preservou geram!</p>
+            <div class="calculadora">
+                <div class="input-group">
+                    <label for="input-arvores">Número de árvores:</label>
+                    <input type="number" id="input-arvores" min="0" placeholder="Ex: 10">
+                </div>
+                <button id="btn-calcular">Calcular Oxigênio</button>
+                <div id="resultado-container" class="hidden animate-fade">
+                    <p id="msg-resultado"></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="container">
+            <h2>Participe do Projeto</h2>
+            <form id="form-contato">
+                <div class="form-group">
+                    <label for="nome">Seu Nome:</label>
+                    <input type="text" id="nome" required placeholder="Digite seu nome">
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Como você ajuda o meio ambiente?</label>
+                    <textarea id="mensagem" rows="4" placeholder="Conte sua ideia..."></textarea>
+                </div>
+                <button type="submit" id="btn-enviar">Enviar Dados</button>
+            </form>
+            <p id="feedback-form" class="feedback"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Agrinho: Agro Forte, Futuro Sustentável. Mídias via Unsplash.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
