@@ -1,0 +1,99 @@
+:root {
+    --primary: #2d5a27;
+    --accent: #8bc34a;
+    --text: #333;
+    --bg: #ffffff;
+    --card-bg: #f4f9f4;
+}
+
+.dark-mode {
+    --bg: #121212;
+    --text: #e0e0e0;
+    --card-bg: #1e2e1e;
+    --primary: #4caf50;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    margin: 0;
+    transition: all 0.4s ease;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background: var(--primary);
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#hero {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.secao-flex {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.img-custom {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.bg-verde {
+    background-color: var(--card-bg);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.btn-acao, #btn-calcular, #btn-enviar {
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.3s ease, background 0.3s;
+}
+
+.btn-acao:hover, #btn-enviar:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(139, 195, 74, 0.4);
+}
+
+.hidden { display: none; }
+
+.animate-fade {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; } to { opacity: 1; }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .secao-flex { flex-direction: column; }
+    #hero { height: 50vh; }
+}
